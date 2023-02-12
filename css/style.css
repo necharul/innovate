@@ -1,0 +1,849 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: flex;
+}
+
+.container {
+    width: 1408px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+.title h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF5538;
+}
+.title h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #29313D;
+    line-height: 140%;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* ===============================
+    nav part start
+================================== */
+
+nav {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav .logo {
+    width: 20%;
+}
+
+nav .nav-item {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-item ul {
+    display: flex;
+    column-gap: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav .nav-item ul li {
+    font-size: 16px;
+}
+
+nav .nav-item ul li i {
+    margin-left: 14px;
+}
+
+nav .button {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .button a {
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    color: #FFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+}
+
+/* ===============================
+    nav part end
+================================== */
+
+
+
+
+
+/* ===============================
+    Banner part start
+================================== */
+
+.banner-part {
+    background: url(../images/herobanner1.png);
+    padding: 295px 0;
+    position: relative;
+}
+
+.banner-part .round-shape {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FF5538;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 635px;
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.banner-part .dot {
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: 500px;
+    animation: tb 4s infinite linear alternate;
+}
+
+@keyframes tb {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50px)
+    }
+}
+
+.banner-part .cross {
+    color: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 315px;
+    right: 300px;
+    animation: rotate 10s infinite linear;
+}
+
+.banner-part .cross2 {
+    color: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    animation: rotate 10s infinite linear;
+}
+
+.banner-part .round-shape .inner-shape {
+    width: 20px;
+    height: 20px;
+    background: #FF5538;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+}
+
+.banner-part h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #29313D;
+    width: 771px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+.banner-part p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    width: 547px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 200%;
+    margin-top: 24px;
+    margin-bottom: 44px;
+}
+
+.banner-part .button {
+    text-align: center;
+}
+
+.banner-part .button a {
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    color: #FFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+
+.banner-part .button a:hover {
+    background: transparent;
+    color: #FF5538;
+    border: 1px solid #FF5538;
+}
+
+/* ===============================
+    Banner part end
+================================== */
+
+
+
+
+
+
+/* ===============================
+    service part start
+================================== */
+
+.service-part .box {
+    justify-content: space-between;
+    transform: translateY(-40%);
+}
+
+.service-part .item {
+    width: 32%;
+    background: #FFF;
+    -webkit-box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    box-sizing: border-box;
+
+}
+
+.service-part .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+    margin-top: 34px;
+    margin-bottom: 16px;
+
+}
+
+.service-part .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+
+}
+
+
+/* ===============================
+    service part end
+================================== */
+
+
+
+
+
+/* ===============================
+    experience part start
+================================== */
+
+.experience-part{
+    position: relative;
+    padding-bottom: 52px;
+}
+
+.experience-part .title{
+    margin-bottom: 60px;
+}
+
+.experience-part .title h2{
+    width: 449px;
+}
+
+.experience-part .left{
+    width: 50%;
+}
+
+.experience-part .left img{
+    width: 100%;
+    height: 100%;
+}
+
+.experience-part .right{
+    width: 50%;
+    background-position: right;
+    padding: 100px 95px;
+    box-sizing: border-box;
+}
+
+.experience-part .right h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #29313D;
+    width: 570px;
+}
+
+.experience-part .right p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #29313D;
+    width: 501px;
+    line-height: 200%;
+    margin-top: 20px;
+    margin-bottom: 48px;
+}
+
+.experience-part .right .button a {
+    display: inline-block;
+    background: #FF5538;
+    padding: 14px 28px;
+    color: #FFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 18px;
+}
+
+.experience-part .exp-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 732px;
+
+}
+
+
+/* ===============================
+    experience part end
+================================== */
+
+
+
+
+
+
+/* ===============================
+    work part start
+================================== */
+
+.work-part{
+    padding: 120px 0;
+    position: relative;
+}
+
+.work-part .title-box{
+    margin-bottom: 30px;
+}
+
+.work-part .title{
+    width: 80%;
+}
+
+.work-part .title h2{
+    width: 693px;
+}
+
+.work-part .button{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.work-part .button a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FF5538;
+    padding: 14px 28px;
+    border: 1px solid #FF5538;
+    border-radius: 18px;
+    transition: .4s;
+}
+
+.work-part .button a:hover{
+    background: #FF5538;
+    color: #FFF;
+}
+
+.work-part .box{
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.work-part .box:last-child{
+    justify-content: space-between;
+}
+
+.work-part .small-item {
+    width: 39%;
+    -webkit-box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-part .small-item img {
+    width: 100%;
+    display: block;
+    height: 331px;
+}
+.work-part .small-item .text-box, .work-part .large-item .text-box{
+    padding-left: 30px;
+}
+
+.work-part .small-item .text-box h3, .work-part .large-item .text-box h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #29313D;
+    margin-top: 30px;
+}
+
+.work-part .small-item .text-box p, .work-part .large-item .text-box p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF5538;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.work-part .large-item {
+    width: 59%;
+    -webkit-box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 7px 82px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-part .large-item img {
+    width: 100%;
+    display: block;
+    height: 331px;
+}
+
+.work-part .work-bg{
+    position: absolute;
+    top: -90px;
+    left: 0;
+    z-index: -1;
+}
+
+/* ===============================
+    work part end
+================================== */
+
+
+
+
+
+
+/* ===============================
+    counting part start
+================================== */
+
+.counting-part{
+    background: url(../images/counting-bg.png) no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.counting-part .count{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.counting-part .count .item{
+    width: 48%;
+    background: #FFF;
+    text-align: center;
+    padding: 74px 0;
+}
+
+.counting-part .count .item h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.counting-part .count .item p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.counting-part .detailes{
+    width: 50%;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.counting-part .detailes h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #29313D;
+    width: 570px;
+}
+
+.counting-part .detailes p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #29313D;
+    width: 550px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.counting-part .detailes .button{
+
+}
+
+.counting-part .detailes .button a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFF;
+    padding: 14px 28px;
+    background: #FF5538;
+    border: 1px solid #FF5538;
+    border-radius: 18px;
+    transition: .4s;
+}
+
+.counting-part .detailes .button a:hover{
+    color: #FF5538;
+    background: transparent;
+    border: 1px solid #FF5538;
+}
+
+/* ===============================
+    counting part end
+================================== */
+
+
+
+
+
+
+/* ===============================
+    global part start
+================================== */
+
+.global-part{
+    padding: 120px 0;
+}
+
+.global-part .tilte h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+    width: 849px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+
+.global-part .box{
+    justify-content: space-between;
+}
+
+.global-part .global-logo .item {
+    width: 13%;
+    background: #FDF9F8;
+    padding: 49px 41px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===============================
+    global part end
+================================== */
+
+
+
+
+
+
+/* ===============================
+    customer part start
+================================== */
+
+.customer{
+    background: url(../images/customer-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.customer .details{
+    width: 50%;
+}
+
+.customer .details .img-box img{
+    margin-right: 30px;
+}
+
+.customer .details p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    color: #29313D;
+    margin-top: 60px;
+}
+
+.customer .details h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #29313D;
+    margin-top: 60px;
+}
+
+.customer .details .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 60px;
+}
+
+.customer .img{
+    width: 50%;
+    text-align: center;
+}
+
+/* ===============================
+    customer part end
+================================== */
+
+
+
+
+
+
+
+
+/* ===============================
+    lets talk part start
+================================== */
+
+.lets-talk{
+    background: url(../images/letstalk-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.lets-talk .details{
+    width: 80%;
+}
+
+.lets-talk .details h4{
+    color: #29313D;
+}
+
+.lets-talk .details h2{
+    margin-bottom: 72px;
+}
+
+.lets-talk hr{
+    border: 1px solid #E4C2B6;
+}
+
+.lets-talk p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    color: #29313D;
+    width: 1268px;
+}
+
+.lets-talk .button{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.lets-talk .title .button a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFF;
+    padding: 14px 28px;
+    background: #FF5538;
+    border: 1px solid #FF5538;
+    border-radius: 18px;
+    transition: .4s;
+    display: inline-block;
+}
+
+.lets-talk .title .button a:hover{
+    color: #FF5538;
+    background: transparent;
+    border: 1px solid #FF5538;
+}
+
+/* ===============================
+    lets talk part end
+================================== */
+
+
+
+
+
+
+
+
+/* ===============================
+    footer part start
+================================== */
+
+
+.footer-part {
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+.footer-part .details{
+    width: 30%;
+}
+
+.footer-part .details p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+    color: #29313D;
+    margin-top: 44px;
+    width: 449px;
+}
+
+.footer-part .menu{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-part .menu .item{
+    width: 32%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-part .menu .item h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #29313D;
+    margin-bottom: 48px;
+}
+
+.footer-part .menu .item ul li{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #323945;
+    margin-bottom: 30px;
+}
+
+.footer-part .menu .item ul li:last-child{
+    margin-bottom: 0;
+}
+
+/* ===============================
+    footer part end
+================================== */
+
+
+
+
+
+
+/* ===============================
+    copyright part start
+================================== */
+
+.copyright-part{
+    padding-bottom: 57px;
+}
+
+.copyright-part .box{
+    justify-content: space-between;
+}
+
+.copyright-part .copyright-text p, .copyright-part .policy{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+    color: #29313D;
+}
+
+.copyright-part .policy ul{
+    display: flex;
+}
+
+.copyright-part .policy ul li:first-child {
+    margin-right: 60px;
+}
+
+/* ===============================
+    copyright part end
+================================== */
